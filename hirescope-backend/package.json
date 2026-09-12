@@ -1,0 +1,41 @@
+{
+  "name": "hirescope-backend",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "HireScope Backend — Express + MongoDB. Interview prep kit generation pipeline.",
+  "main": "src/server.js",
+  "scripts": {
+    "dev": "node --watch src/server.js",
+    "start": "node src/server.js",
+    "evaluate": "node scripts/evaluate.js",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --runInBand",
+    "test:unit": "node --experimental-vm-modules node_modules/jest/bin/jest.js --testPathPattern=tests/unit",
+    "test:integration": "node --experimental-vm-modules node_modules/jest/bin/jest.js --testPathPattern=tests/integration",
+    "lint": "eslint src/"
+  },
+  "dependencies": {
+    "express": "^4.21.0",
+    "cors": "^2.8.5",
+    "helmet": "^8.0.0",
+    "express-session": "^1.18.1",
+    "connect-mongo": "^5.1.0",
+    "mongoose": "^8.8.0",
+    "zod": "^3.24.0",
+    "bcryptjs": "^2.4.3",
+    "nanoid": "^5.0.9",
+    "cheerio": "^1.0.0",
+    "express-rate-limit": "^7.4.0",
+    "winston": "^3.17.0",
+    "dotenv": "^16.4.7",
+    "@google/generative-ai": "^0.21.0",
+    "groq-sdk": "^0.8.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "@jest/globals": "^29.7.0",
+    "eslint": "^9.0.0"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
