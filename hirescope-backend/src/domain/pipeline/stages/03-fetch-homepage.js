@@ -3,22 +3,29 @@
  * Through SSRF guard, with timeout + size cap.
  */
 
-import { ok, err } from "../../../utils/result.js";
+import { ok } from "../../../utils/result.js";
 import logger from "../../../utils/logger.js";
+import { safeFetcher } from "../../../retrieval/fetcher.js";
 
 export async function fetchHomepage(ctx, deps) {
   const { company_url } = ctx.input;
+  const fetcher = deps?.fetcher || safeFetcher;
 
   try {
-    // TODO: Use deps.fetcher.fetch(company_url) with SSRF guard
-    logger.info("Stage 3: Fetch homepage — awaiting fetcher implementation", { company_url });
-
-    ctx.homepageHtml = null; // Placeholder
-    return ok(null);
+    const fetchResult = await fetcher.fetchPage(company_url);
+    if (fetchResult.ok) {
+      ctx.homepageHtml = fetchResult.value.html;
+      logger.info(`Stage 3: Successfully fetched homepage (${company_url})`);
+    } else {
+      logger.warn(`Stage 3: Non-fatal homepage fetch issue: ${fetchResult.error?.message}`);
+      ctx.homepageHtml = null;
+      ctx.generationGaps = ctx.generationGaps || [];
+      ctx.generationGaps.push(`Homepage fetch degraded: ${fetchResult.error?.message}`);
+    }
   } catch (error) {
-    // Non-fatal: pipeline continues with recorded gap
-    logger.warn("Stage 3: Failed to fetch homepage", { error: error.message });
+    logger.warn(`Stage 3: Failed to fetch homepage (${error.message}) - continuing pipeline`);
     ctx.homepageHtml = null;
-    return err({ code: "FETCH_FAILED", message: error.message });
   }
+
+  return ok(null);
 }

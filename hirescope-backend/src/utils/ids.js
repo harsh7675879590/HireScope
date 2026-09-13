@@ -44,3 +44,6 @@ export function dedupeKey(jd, companyUrl) {
   hash.update(companyUrl.trim().toLowerCase());
   return hash.digest("hex");
 }
+
+export const hashDedupeKey = dedupeKey;
+

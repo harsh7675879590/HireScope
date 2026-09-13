@@ -10,10 +10,8 @@ let isConnected = false;
 export async function connectDatabase() {
   if (isConnected) return;
 
-  const uri = process.env.MONGODB_URI;
-  if (!uri) {
-    throw new Error("MONGODB_URI environment variable is not set");
-  }
+  const uri = process.env.MONGODB_URI || "mongodb://localhost:27017/hirescope";
+
 
   try {
     await mongoose.connect(uri, {

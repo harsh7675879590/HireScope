@@ -3,18 +3,24 @@
  *
  * 4 SEPARATE LLM calls — one per category (technical, behavioural,
  * system-design, company-fit). "Should not come from the same call."
- * Each scoped to relevant requirements and schema-validated independently.
+ * Each scoped to relevant requirements and company brief context.
  */
-import { ok } from "../../../utils/result.js";
-import { QUESTION_CATEGORIES } from "../../types.js";
+
+import { ok, err } from "../../../utils/result.js";
+import { generateAllQuestions } from "../../../generation/question-generator.js";
+import logger from "../../../utils/logger.js";
 
 export async function generateQuestions(ctx, deps) {
-  // TODO: For each category in QUESTION_CATEGORIES:
-  //   1. Filter requirements relevant to this category
-  //   2. Make separate LLM call via deps.llmClient
-  //   3. Validate each response independently with QuestionSchema
-  //   4. Assign unique IDs via questionId()
-  //   5. Set _state: { origin: "generated", edited: false, pinned: false, deleted: false, generationBatch: 1 }
-  ctx.questions = [];
-  return ok(null);
+  try {
+    const questions = await generateAllQuestions(ctx, deps.llmClient);
+    ctx.questions = questions;
+    logger.info(`Stage 9 completed: Generated ${questions.length} questions across 4 categories`);
+    return ok(null);
+  } catch (error) {
+    logger.error(`Stage 9 failure: ${error.message}`);
+    return err({
+      code: "QUESTION_GENERATION_FAILED",
+      message: `Failed to generate questions: ${error.message}`
+    });
+  }
 }

@@ -1,0 +1,844 @@
+[
+  {
+    "id": "case-senior-backend",
+    "status": "ready",
+    "input": {
+      "jd": "Senior Backend Engineer\n\nAbout the role:\nWe are seeking a Senior Backend Engineer to lead development of our distributed event-driven platform.\n\nMust-have requirements:\n- Must have 5+ years of experience building scalable backend microservices in Node.js and JavaScript/TypeScript.\n- Required: Strong experience with MongoDB or relational databases, query optimization, and data modeling.\n- Mandatory: Hands-on experience designing and securing high-throughput REST APIs and WebSocket services.\n- Essential: Deep understanding of distributed systems fundamentals, concurrency, and caching strategies.\n\nNice to have:\n- Bonus: Experience with Kubernetes, Docker, and AWS cloud deployment.\n- Preferred: Familiarity with message brokers such as Apache Kafka or RabbitMQ.",
+      "company_url": "https://example.com",
+      "days": 7
+    },
+    "kit": {
+      "role": "Software Engineer",
+      "seniority": "Mid-Senior",
+      "responsibilities": [
+        "Design, build, and maintain scalable backend services and APIs",
+        "Collaborate with cross-functional teams to define architecture and requirements",
+        "Ensure high performance, reliability, and code quality through testing and reviews"
+      ],
+      "requirements": [
+        {
+          "id": "req-1",
+          "text": "Proficiency in JavaScript/TypeScript and Node.js backend development",
+          "priority": "must",
+          "kind": "technical"
+        },
+        {
+          "id": "req-2",
+          "text": "Hands-on experience with relational or NoSQL databases like MongoDB or PostgreSQL",
+          "priority": "must",
+          "kind": "technical"
+        },
+        {
+          "id": "req-3",
+          "text": "Experience designing RESTful APIs and microservice architectures",
+          "priority": "must",
+          "kind": "system-design"
+        },
+        {
+          "id": "req-4",
+          "text": "Strong problem solving, data structures, and algorithms fundamentals",
+          "priority": "must",
+          "kind": "technical"
+        },
+        {
+          "id": "req-5",
+          "text": "Familiarity with cloud platforms (AWS/GCP), Docker, and CI/CD pipelines",
+          "priority": "nice",
+          "kind": "general"
+        },
+        {
+          "id": "req-6",
+          "text": "Experience with frontend modern frameworks (React/Next.js)",
+          "priority": "nice",
+          "kind": "technical"
+        }
+      ],
+      "company_brief": {
+        "company_name": "Example",
+        "overview": "An innovative technology company building high-performance products and solutions for modern scale.",
+        "culture": "Collaborative engineering and high standards.",
+        "recent_news": "No recent public press or updates found in scraped content.",
+        "interview_process": "Technical screening followed by system architecture and behavioral rounds.",
+        "hiring_page_url": null,
+        "sources": [
+          "Company Homepage",
+          "Public community forum summary",
+          "Interview review discussions"
+        ]
+      },
+      "questions": [
+        {
+          "id": "q_w1iOsgkLpNDETdnJ",
+          "category": "technical",
+          "question": "Asynchronous Node.js Event Loop and Concurrency Management",
+          "why_relevant": "Candidate should explain the event loop phases (timers, I/O polling, check), microtasks vs macrotasks, and how to avoid blocking operations.",
+          "difficulty": 2,
+          "estimated_minutes": 20,
+          "requirement_ids": [
+            "req-1"
+          ],
+          "_state": {
+            "origin": "generated",
+            "edited": false,
+            "pinned": false,
+            "deleted": false,
+            "generationBatch": 1
+          }
+        },
+        {
+          "id": "q_13m61vCHzprItt85",
+          "category": "technical",
+          "question": "Database Indexing Strategy and Query Optimization in MongoDB",
+          "why_relevant": "Evaluates indexing strategy, compound indexes (ESR rule), execution plan analysis using explain(), and handling write amplification.",
+          "difficulty": 3,
+          "estimated_minutes": 30,
+          "requirement_ids": [
+            "req-2"
+          ],
+          "_state": {
+            "origin": "generated",
+            "edited": false,
+            "pinned": false,
+            "deleted": false,
+            "generationBatch": 1
+          }
+        },
+        {
+          "id": "q_pe8IkVm_QBcDo_zH",
+          "category": "system-design",
+          "question": "Asynchronous Node.js Event Loop and Concurrency Management",
+          "why_relevant": "Candidate should explain the event loop phases (timers, I/O polling, check), microtasks vs macrotasks, and how to avoid blocking operations.",
+          "difficulty": 2,
+          "estimated_minutes": 20,
+          "requirement_ids": [
+            "req-1"
+          ],
+          "_state": {
+            "origin": "generated",
+            "edited": false,
+            "pinned": false,
+            "deleted": false,
+            "generationBatch": 1
+          }
+        },
+        {
+          "id": "q_-Vdo449dooFuRt-t",
+          "category": "system-design",
+          "question": "Database Indexing Strategy and Query Optimization in MongoDB",
+          "why_relevant": "Evaluates indexing strategy, compound indexes (ESR rule), execution plan analysis using explain(), and handling write amplification.",
+          "difficulty": 3,
+          "estimated_minutes": 30,
+          "requirement_ids": [
+            "req-2"
+          ],
+          "_state": {
+            "origin": "generated",
+            "edited": false,
+            "pinned": false,
+            "deleted": false,
+            "generationBatch": 1
+          }
+        },
+        {
+          "id": "q_VM8rUd2ApD3Q03OZ",
+          "category": "behavioural",
+          "question": "Asynchronous Node.js Event Loop and Concurrency Management",
+          "why_relevant": "Candidate should explain the event loop phases (timers, I/O polling, check), microtasks vs macrotasks, and how to avoid blocking operations.",
+          "difficulty": 2,
+          "estimated_minutes": 20,
+          "requirement_ids": [
+            "req-1"
+          ],
+          "_state": {
+            "origin": "generated",
+            "edited": false,
+            "pinned": false,
+            "deleted": false,
+            "generationBatch": 1
+          }
+        },
+        {
+          "id": "q_kg0RXDJVRck3vvTy",
+          "category": "behavioural",
+          "question": "Database Indexing Strategy and Query Optimization in MongoDB",
+          "why_relevant": "Evaluates indexing strategy, compound indexes (ESR rule), execution plan analysis using explain(), and handling write amplification.",
+          "difficulty": 3,
+          "estimated_minutes": 30,
+          "requirement_ids": [
+            "req-2"
+          ],
+          "_state": {
+            "origin": "generated",
+            "edited": false,
+            "pinned": false,
+            "deleted": false,
+            "generationBatch": 1
+          }
+        },
+        {
+          "id": "q_GDiCAL5a1fYiWkE_",
+          "category": "company-fit",
+          "question": "Asynchronous Node.js Event Loop and Concurrency Management",
+          "why_relevant": "Candidate should explain the event loop phases (timers, I/O polling, check), microtasks vs macrotasks, and how to avoid blocking operations.",
+          "difficulty": 2,
+          "estimated_minutes": 20,
+          "requirement_ids": [
+            "req-1"
+          ],
+          "_state": {
+            "origin": "generated",
+            "edited": false,
+            "pinned": false,
+            "deleted": false,
+            "generationBatch": 1
+          }
+        },
+        {
+          "id": "q_rlgJoL-kv3CMGd_n",
+          "category": "company-fit",
+          "question": "Database Indexing Strategy and Query Optimization in MongoDB",
+          "why_relevant": "Evaluates indexing strategy, compound indexes (ESR rule), execution plan analysis using explain(), and handling write amplification.",
+          "difficulty": 3,
+          "estimated_minutes": 30,
+          "requirement_ids": [
+            "req-2"
+          ],
+          "_state": {
+            "origin": "generated",
+            "edited": false,
+            "pinned": false,
+            "deleted": false,
+            "generationBatch": 1
+          }
+        },
+        {
+          "id": "q_PMGwu59RxKkh_Azx",
+          "category": "technical",
+          "question": "Targeted technical assessment",
+          "why_relevant": "Addresses identified requirement gap.",
+          "difficulty": 2,
+          "estimated_minutes": 20,
+          "requirement_ids": [
+            "req-1"
+          ],
+          "_state": {
+            "origin": "generated",
+            "edited": false,
+            "pinned": false,
+            "deleted": false,
+            "generationBatch": 2
+          }
+        },
+        {
+          "id": "q_ENcx5F4yvQgBnMKn",
+          "category": "technical",
+          "question": "Targeted technical assessment",
+          "why_relevant": "Addresses identified requirement gap.",
+          "difficulty": 3,
+          "estimated_minutes": 30,
+          "requirement_ids": [
+            "req-2"
+          ],
+          "_state": {
+            "origin": "generated",
+            "edited": false,
+            "pinned": false,
+            "deleted": false,
+            "generationBatch": 2
+          }
+        }
+      ],
+      "flashcards": [],
+      "schedule": [
+        {
+          "day": 1,
+          "focus": "Core Foundations & System design Deep Dive",
+          "question_ids": [
+            "q_-Vdo449dooFuRt-t",
+            "q_rlgJoL-kv3CMGd_n",
+            "q_VM8rUd2ApD3Q03OZ"
+          ],
+          "minutes": 80
+        },
+        {
+          "day": 2,
+          "focus": "Technical Focus & Targeted Problem Solving",
+          "question_ids": [
+            "q_13m61vCHzprItt85",
+            "q_pe8IkVm_QBcDo_zH",
+            "q_GDiCAL5a1fYiWkE_"
+          ],
+          "minutes": 70
+        },
+        {
+          "day": 3,
+          "focus": "Technical Focus & Targeted Problem Solving",
+          "question_ids": [
+            "q_ENcx5F4yvQgBnMKn",
+            "q_w1iOsgkLpNDETdnJ"
+          ],
+          "minutes": 50
+        },
+        {
+          "day": 4,
+          "focus": "Behavioural Focus & Targeted Problem Solving",
+          "question_ids": [
+            "q_kg0RXDJVRck3vvTy",
+            "q_PMGwu59RxKkh_Azx"
+          ],
+          "minutes": 50
+        },
+        {
+          "day": 5,
+          "focus": "Free review / rest & reflection",
+          "question_ids": [],
+          "minutes": 0
+        },
+        {
+          "day": 6,
+          "focus": "Free review / rest & reflection",
+          "question_ids": [],
+          "minutes": 0
+        },
+        {
+          "day": 7,
+          "focus": "Free review / rest & reflection",
+          "question_ids": [],
+          "minutes": 0
+        }
+      ],
+      "coverage": {
+        "uncovered_requirement_ids": [
+          "req-3",
+          "req-4"
+        ],
+        "passes": 2
+      }
+    },
+    "meta": {
+      "durationMs": 8765,
+      "generationLog": [
+        {
+          "stage": "parse-input",
+          "status": "completed",
+          "startedAt": "2026-09-12T14:19:04.410Z",
+          "finishedAt": "2026-09-12T14:19:04.413Z",
+          "error": null
+        },
+        {
+          "stage": "extract-requirements",
+          "status": "completed",
+          "startedAt": "2026-09-12T14:19:04.413Z",
+          "finishedAt": "2026-09-12T14:19:04.416Z",
+          "error": null
+        },
+        {
+          "stage": "fetch-homepage",
+          "status": "completed",
+          "startedAt": "2026-09-12T14:19:04.416Z",
+          "finishedAt": "2026-09-12T14:19:04.632Z",
+          "error": null
+        },
+        {
+          "stage": "clean-page",
+          "status": "completed",
+          "startedAt": "2026-09-12T14:19:04.632Z",
+          "finishedAt": "2026-09-12T14:19:04.656Z",
+          "error": null
+        },
+        {
+          "stage": "discover-rank-links",
+          "status": "completed",
+          "startedAt": "2026-09-12T14:19:04.656Z",
+          "finishedAt": "2026-09-12T14:19:04.661Z",
+          "error": null
+        },
+        {
+          "stage": "fetch-subpages",
+          "status": "completed",
+          "startedAt": "2026-09-12T14:19:04.661Z",
+          "finishedAt": "2026-09-12T14:19:04.662Z",
+          "error": null
+        },
+        {
+          "stage": "search-discussions",
+          "status": "completed",
+          "startedAt": "2026-09-12T14:19:04.662Z",
+          "finishedAt": "2026-09-12T14:19:04.662Z",
+          "error": null
+        },
+        {
+          "stage": "generate-brief",
+          "status": "completed",
+          "startedAt": "2026-09-12T14:19:04.662Z",
+          "finishedAt": "2026-09-12T14:19:04.666Z",
+          "error": null
+        },
+        {
+          "stage": "generate-questions",
+          "status": "completed",
+          "startedAt": "2026-09-12T14:19:04.666Z",
+          "finishedAt": "2026-09-12T14:19:04.671Z",
+          "error": null
+        },
+        {
+          "stage": "generate-flashcards",
+          "status": "completed",
+          "startedAt": "2026-09-12T14:19:04.671Z",
+          "finishedAt": "2026-09-12T14:19:04.672Z",
+          "error": null
+        },
+        {
+          "stage": "coverage-pass-1",
+          "status": "completed",
+          "startedAt": "2026-09-12T14:19:04.672Z",
+          "finishedAt": "2026-09-12T14:19:04.672Z",
+          "error": null
+        },
+        {
+          "stage": "gap-fill",
+          "status": "completed",
+          "startedAt": "2026-09-12T14:19:04.672Z",
+          "finishedAt": "2026-09-12T14:19:04.674Z",
+          "error": null
+        },
+        {
+          "stage": "coverage-pass-2",
+          "status": "completed",
+          "startedAt": "2026-09-12T14:19:04.674Z",
+          "finishedAt": "2026-09-12T14:19:04.674Z",
+          "error": null
+        },
+        {
+          "stage": "schedule-allocation",
+          "status": "completed",
+          "startedAt": "2026-09-12T14:19:04.674Z",
+          "finishedAt": "2026-09-12T14:19:04.676Z",
+          "error": null
+        },
+        {
+          "stage": "schema-validation",
+          "status": "completed",
+          "startedAt": "2026-09-12T14:19:04.676Z",
+          "finishedAt": "2026-09-12T14:19:04.680Z",
+          "error": null
+        },
+        {
+          "stage": "persist",
+          "status": "completed",
+          "startedAt": "2026-09-12T14:19:04.680Z",
+          "finishedAt": "2026-09-12T14:19:04.680Z",
+          "error": null
+        }
+      ]
+    }
+  },
+  {
+    "id": "case-fullstack-mid",
+    "status": "ready",
+    "input": {
+      "jd": "Full Stack Software Developer\n\nRequirements:\n- Must be proficient in modern JavaScript, React, and Express/Node.js.\n- Required experience with state management, component architecture, and responsive web design.\n- Must demonstrate strong analytical problem-solving and clean code practices.\n- Nice to have: Experience with CI/CD workflows and automated testing using Jest.",
+      "company_url": "https://example.com",
+      "days": 3
+    },
+    "kit": {
+      "role": "Software Engineer",
+      "seniority": "Mid-Senior",
+      "responsibilities": [
+        "Design, build, and maintain scalable backend services and APIs",
+        "Collaborate with cross-functional teams to define architecture and requirements",
+        "Ensure high performance, reliability, and code quality through testing and reviews"
+      ],
+      "requirements": [
+        {
+          "id": "req-1",
+          "text": "Proficiency in JavaScript/TypeScript and Node.js backend development",
+          "priority": "must",
+          "kind": "technical"
+        },
+        {
+          "id": "req-2",
+          "text": "Hands-on experience with relational or NoSQL databases like MongoDB or PostgreSQL",
+          "priority": "must",
+          "kind": "technical"
+        },
+        {
+          "id": "req-3",
+          "text": "Experience designing RESTful APIs and microservice architectures",
+          "priority": "must",
+          "kind": "system-design"
+        },
+        {
+          "id": "req-4",
+          "text": "Strong problem solving, data structures, and algorithms fundamentals",
+          "priority": "must",
+          "kind": "technical"
+        },
+        {
+          "id": "req-5",
+          "text": "Familiarity with cloud platforms (AWS/GCP), Docker, and CI/CD pipelines",
+          "priority": "nice",
+          "kind": "general"
+        },
+        {
+          "id": "req-6",
+          "text": "Experience with frontend modern frameworks (React/Next.js)",
+          "priority": "nice",
+          "kind": "technical"
+        }
+      ],
+      "company_brief": {
+        "company_name": "Example",
+        "overview": "An innovative technology company building high-performance products and solutions for modern scale.",
+        "culture": "Collaborative engineering and high standards.",
+        "recent_news": "No recent public press or updates found in scraped content.",
+        "interview_process": "Technical screening followed by system architecture and behavioral rounds.",
+        "hiring_page_url": null,
+        "sources": [
+          "Company Homepage",
+          "Public community forum summary",
+          "Interview review discussions"
+        ]
+      },
+      "questions": [
+        {
+          "id": "q_uz0w_xyooGwhx5vU",
+          "category": "technical",
+          "question": "Asynchronous Node.js Event Loop and Concurrency Management",
+          "why_relevant": "Candidate should explain the event loop phases (timers, I/O polling, check), microtasks vs macrotasks, and how to avoid blocking operations.",
+          "difficulty": 2,
+          "estimated_minutes": 20,
+          "requirement_ids": [
+            "req-1"
+          ],
+          "_state": {
+            "origin": "generated",
+            "edited": false,
+            "pinned": false,
+            "deleted": false,
+            "generationBatch": 1
+          }
+        },
+        {
+          "id": "q_ZzGBc0z4Cy5MQuBX",
+          "category": "technical",
+          "question": "Database Indexing Strategy and Query Optimization in MongoDB",
+          "why_relevant": "Evaluates indexing strategy, compound indexes (ESR rule), execution plan analysis using explain(), and handling write amplification.",
+          "difficulty": 3,
+          "estimated_minutes": 30,
+          "requirement_ids": [
+            "req-2"
+          ],
+          "_state": {
+            "origin": "generated",
+            "edited": false,
+            "pinned": false,
+            "deleted": false,
+            "generationBatch": 1
+          }
+        },
+        {
+          "id": "q_j7YLqgJKpzD5RJqT",
+          "category": "system-design",
+          "question": "Asynchronous Node.js Event Loop and Concurrency Management",
+          "why_relevant": "Candidate should explain the event loop phases (timers, I/O polling, check), microtasks vs macrotasks, and how to avoid blocking operations.",
+          "difficulty": 2,
+          "estimated_minutes": 20,
+          "requirement_ids": [
+            "req-1"
+          ],
+          "_state": {
+            "origin": "generated",
+            "edited": false,
+            "pinned": false,
+            "deleted": false,
+            "generationBatch": 1
+          }
+        },
+        {
+          "id": "q_pAPIzehYTPCpnmL7",
+          "category": "system-design",
+          "question": "Database Indexing Strategy and Query Optimization in MongoDB",
+          "why_relevant": "Evaluates indexing strategy, compound indexes (ESR rule), execution plan analysis using explain(), and handling write amplification.",
+          "difficulty": 3,
+          "estimated_minutes": 30,
+          "requirement_ids": [
+            "req-2"
+          ],
+          "_state": {
+            "origin": "generated",
+            "edited": false,
+            "pinned": false,
+            "deleted": false,
+            "generationBatch": 1
+          }
+        },
+        {
+          "id": "q_xlLPPvupYw8b4rj2",
+          "category": "behavioural",
+          "question": "Asynchronous Node.js Event Loop and Concurrency Management",
+          "why_relevant": "Candidate should explain the event loop phases (timers, I/O polling, check), microtasks vs macrotasks, and how to avoid blocking operations.",
+          "difficulty": 2,
+          "estimated_minutes": 20,
+          "requirement_ids": [
+            "req-1"
+          ],
+          "_state": {
+            "origin": "generated",
+            "edited": false,
+            "pinned": false,
+            "deleted": false,
+            "generationBatch": 1
+          }
+        },
+        {
+          "id": "q_OMyiW55owN6reV70",
+          "category": "behavioural",
+          "question": "Database Indexing Strategy and Query Optimization in MongoDB",
+          "why_relevant": "Evaluates indexing strategy, compound indexes (ESR rule), execution plan analysis using explain(), and handling write amplification.",
+          "difficulty": 3,
+          "estimated_minutes": 30,
+          "requirement_ids": [
+            "req-2"
+          ],
+          "_state": {
+            "origin": "generated",
+            "edited": false,
+            "pinned": false,
+            "deleted": false,
+            "generationBatch": 1
+          }
+        },
+        {
+          "id": "q_PA2fU8bmnd5nlN7O",
+          "category": "company-fit",
+          "question": "Asynchronous Node.js Event Loop and Concurrency Management",
+          "why_relevant": "Candidate should explain the event loop phases (timers, I/O polling, check), microtasks vs macrotasks, and how to avoid blocking operations.",
+          "difficulty": 2,
+          "estimated_minutes": 20,
+          "requirement_ids": [
+            "req-1"
+          ],
+          "_state": {
+            "origin": "generated",
+            "edited": false,
+            "pinned": false,
+            "deleted": false,
+            "generationBatch": 1
+          }
+        },
+        {
+          "id": "q_YHPGNe7ZLbSetbPR",
+          "category": "company-fit",
+          "question": "Database Indexing Strategy and Query Optimization in MongoDB",
+          "why_relevant": "Evaluates indexing strategy, compound indexes (ESR rule), execution plan analysis using explain(), and handling write amplification.",
+          "difficulty": 3,
+          "estimated_minutes": 30,
+          "requirement_ids": [
+            "req-2"
+          ],
+          "_state": {
+            "origin": "generated",
+            "edited": false,
+            "pinned": false,
+            "deleted": false,
+            "generationBatch": 1
+          }
+        },
+        {
+          "id": "q_Asgnod5LP-lxRTkj",
+          "category": "technical",
+          "question": "Targeted technical assessment",
+          "why_relevant": "Addresses identified requirement gap.",
+          "difficulty": 2,
+          "estimated_minutes": 20,
+          "requirement_ids": [
+            "req-1"
+          ],
+          "_state": {
+            "origin": "generated",
+            "edited": false,
+            "pinned": false,
+            "deleted": false,
+            "generationBatch": 2
+          }
+        },
+        {
+          "id": "q_eYHkbbXpusbgvrTw",
+          "category": "technical",
+          "question": "Targeted technical assessment",
+          "why_relevant": "Addresses identified requirement gap.",
+          "difficulty": 3,
+          "estimated_minutes": 30,
+          "requirement_ids": [
+            "req-2"
+          ],
+          "_state": {
+            "origin": "generated",
+            "edited": false,
+            "pinned": false,
+            "deleted": false,
+            "generationBatch": 2
+          }
+        }
+      ],
+      "flashcards": [],
+      "schedule": [
+        {
+          "day": 1,
+          "focus": "Core Foundations & Technical Deep Dive",
+          "question_ids": [
+            "q_pAPIzehYTPCpnmL7",
+            "q_eYHkbbXpusbgvrTw",
+            "q_YHPGNe7ZLbSetbPR",
+            "q_uz0w_xyooGwhx5vU",
+            "q_xlLPPvupYw8b4rj2"
+          ],
+          "minutes": 130
+        },
+        {
+          "day": 2,
+          "focus": "Technical Focus & Targeted Problem Solving",
+          "question_ids": [
+            "q_ZzGBc0z4Cy5MQuBX",
+            "q_OMyiW55owN6reV70",
+            "q_j7YLqgJKpzD5RJqT",
+            "q_Asgnod5LP-lxRTkj",
+            "q_PA2fU8bmnd5nlN7O"
+          ],
+          "minutes": 120
+        },
+        {
+          "day": 3,
+          "focus": "Free review / rest & reflection",
+          "question_ids": [],
+          "minutes": 0
+        }
+      ],
+      "coverage": {
+        "uncovered_requirement_ids": [
+          "req-3",
+          "req-4"
+        ],
+        "passes": 2
+      }
+    },
+    "meta": {
+      "durationMs": 45,
+      "generationLog": [
+        {
+          "stage": "parse-input",
+          "status": "completed",
+          "startedAt": "2026-09-12T14:19:04.681Z",
+          "finishedAt": "2026-09-12T14:19:04.682Z",
+          "error": null
+        },
+        {
+          "stage": "extract-requirements",
+          "status": "completed",
+          "startedAt": "2026-09-12T14:19:04.682Z",
+          "finishedAt": "2026-09-12T14:19:04.682Z",
+          "error": null
+        },
+        {
+          "stage": "fetch-homepage",
+          "status": "completed",
+          "startedAt": "2026-09-12T14:19:04.682Z",
+          "finishedAt": "2026-09-12T14:19:04.715Z",
+          "error": null
+        },
+        {
+          "stage": "clean-page",
+          "status": "completed",
+          "startedAt": "2026-09-12T14:19:04.715Z",
+          "finishedAt": "2026-09-12T14:19:04.718Z",
+          "error": null
+        },
+        {
+          "stage": "discover-rank-links",
+          "status": "completed",
+          "startedAt": "2026-09-12T14:19:04.718Z",
+          "finishedAt": "2026-09-12T14:19:04.721Z",
+          "error": null
+        },
+        {
+          "stage": "fetch-subpages",
+          "status": "completed",
+          "startedAt": "2026-09-12T14:19:04.721Z",
+          "finishedAt": "2026-09-12T14:19:04.721Z",
+          "error": null
+        },
+        {
+          "stage": "search-discussions",
+          "status": "completed",
+          "startedAt": "2026-09-12T14:19:04.721Z",
+          "finishedAt": "2026-09-12T14:19:04.722Z",
+          "error": null
+        },
+        {
+          "stage": "generate-brief",
+          "status": "completed",
+          "startedAt": "2026-09-12T14:19:04.722Z",
+          "finishedAt": "2026-09-12T14:19:04.722Z",
+          "error": null
+        },
+        {
+          "stage": "generate-questions",
+          "status": "completed",
+          "startedAt": "2026-09-12T14:19:04.722Z",
+          "finishedAt": "2026-09-12T14:19:04.724Z",
+          "error": null
+        },
+        {
+          "stage": "generate-flashcards",
+          "status": "completed",
+          "startedAt": "2026-09-12T14:19:04.724Z",
+          "finishedAt": "2026-09-12T14:19:04.724Z",
+          "error": null
+        },
+        {
+          "stage": "coverage-pass-1",
+          "status": "completed",
+          "startedAt": "2026-09-12T14:19:04.724Z",
+          "finishedAt": "2026-09-12T14:19:04.725Z",
+          "error": null
+        },
+        {
+          "stage": "gap-fill",
+          "status": "completed",
+          "startedAt": "2026-09-12T14:19:04.725Z",
+          "finishedAt": "2026-09-12T14:19:04.725Z",
+          "error": null
+        },
+        {
+          "stage": "coverage-pass-2",
+          "status": "completed",
+          "startedAt": "2026-09-12T14:19:04.725Z",
+          "finishedAt": "2026-09-12T14:19:04.725Z",
+          "error": null
+        },
+        {
+          "stage": "schedule-allocation",
+          "status": "completed",
+          "startedAt": "2026-09-12T14:19:04.725Z",
+          "finishedAt": "2026-09-12T14:19:04.725Z",
+          "error": null
+        },
+        {
+          "stage": "schema-validation",
+          "status": "completed",
+          "startedAt": "2026-09-12T14:19:04.725Z",
+          "finishedAt": "2026-09-12T14:19:04.726Z",
+          "error": null
+        },
+        {
+          "stage": "persist",
+          "status": "completed",
+          "startedAt": "2026-09-12T14:19:04.726Z",
+          "finishedAt": "2026-09-12T14:19:04.726Z",
+          "error": null
+        }
+      ]
+    }
+  }
+]

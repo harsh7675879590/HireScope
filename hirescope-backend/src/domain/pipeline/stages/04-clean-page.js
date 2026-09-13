@@ -4,16 +4,14 @@
  */
 
 import { ok } from "../../../utils/result.js";
+import { cleanHtmlToText } from "../../../retrieval/page-cleaner.js";
 
 export async function cleanPage(ctx, _deps) {
   if (!ctx.homepageHtml) {
-    ctx.cleanedPageText = "";
+    ctx.homepageCleanText = "";
     return ok(null);
   }
 
-  // TODO: Use cheerio to strip scripts, styles, nav, footer
-  // - Collapse whitespace
-  // - Cap at max length (e.g., 8000 chars) for LLM context window
-  ctx.cleanedPageText = "";
+  ctx.homepageCleanText = cleanHtmlToText(ctx.homepageHtml, 12000);
   return ok(null);
 }

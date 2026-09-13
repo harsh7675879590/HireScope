@@ -104,3 +104,26 @@ export const RecordAnswerRequestSchema = z.object({
   flashcardId: z.string(),
   confidence: z.number().int().min(1).max(5),
 });
+
+// ─── Aliases for compatibility ────────────────────────────────────────────────
+export const RegenerateSectionRequestSchema = z.object({
+  section: RegenerateSectionSchema,
+  forceOverwrite: z.boolean().optional(),
+  stateVersion: z.number().int().optional(),
+});
+export const AddQuestionRequestSchema = CreateQuestionRequestSchema.extend({
+  stateVersion: z.number().int().optional(),
+});
+export const EditQuestionRequestSchema = UpdateQuestionRequestSchema.extend({
+  stateVersion: z.number().int().optional(),
+});
+export const AddFlashcardRequestSchema = CreateFlashcardRequestSchema.extend({
+  stateVersion: z.number().int().optional(),
+});
+export const EditFlashcardRequestSchema = UpdateFlashcardRequestSchema.extend({
+  stateVersion: z.number().int().optional(),
+});
+export const EditBriefRequestSchema = UpdateBriefRequestSchema.extend({
+  stateVersion: z.number().int().optional(),
+});
+

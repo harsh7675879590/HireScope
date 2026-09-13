@@ -39,3 +39,6 @@ export const generationLimiter = rateLimit({
     message: "Generation limit reached. Please try again later.",
   },
 });
+
+export const kitGenLimiter = generationLimiter;
+

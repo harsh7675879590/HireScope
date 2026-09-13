@@ -1,0 +1,14 @@
+[
+  {
+    "id": "case-senior-backend",
+    "company_url": "https://example.com",
+    "days": 7,
+    "jd": "Senior Backend Engineer\n\nAbout the role:\nWe are seeking a Senior Backend Engineer to lead development of our distributed event-driven platform.\n\nMust-have requirements:\n- Must have 5+ years of experience building scalable backend microservices in Node.js and JavaScript/TypeScript.\n- Required: Strong experience with MongoDB or relational databases, query optimization, and data modeling.\n- Mandatory: Hands-on experience designing and securing high-throughput REST APIs and WebSocket services.\n- Essential: Deep understanding of distributed systems fundamentals, concurrency, and caching strategies.\n\nNice to have:\n- Bonus: Experience with Kubernetes, Docker, and AWS cloud deployment.\n- Preferred: Familiarity with message brokers such as Apache Kafka or RabbitMQ."
+  },
+  {
+    "id": "case-fullstack-mid",
+    "company_url": "https://example.com",
+    "days": 3,
+    "jd": "Full Stack Software Developer\n\nRequirements:\n- Must be proficient in modern JavaScript, React, and Express/Node.js.\n- Required experience with state management, component architecture, and responsive web design.\n- Must demonstrate strong analytical problem-solving and clean code practices.\n- Nice to have: Experience with CI/CD workflows and automated testing using Jest."
+  }
+]
